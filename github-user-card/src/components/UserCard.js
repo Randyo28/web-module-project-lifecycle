@@ -6,8 +6,15 @@ class UserCard extends Component {
         const { user } = this.props;
 
         return (
-            <div>
-                <h2>{user.name}</h2>
+            <div className="user-container">
+                <h1>{user.name}</h1>
+                <img src={user.avatar_url} alt="Randy" />
+                <h2>id: {user.id}</h2>
+                <h2>Bio: {user.bio}</h2>
+                <h2>followers: {user.followers}</h2>
+                <h2>following: {user.following}</h2>
+                <h2>Twitter: {user.twitter_username}</h2>
+                <h2>Location: {user.location}</h2>
             </div>
         );
     }
